@@ -816,7 +816,7 @@
           <div class="col-md-6 col-lg-8 m-15px-tb">
             <div class="contact-form m-50px-l md-m-0px-l">
               <h2>Drop us A Message</h2>
-              <form class="contactform" method="post" onsubmit="sendComment()">
+              <form class="contactform" method="post" id="send-comment">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -942,14 +942,18 @@
   <!-- custom -->
   <script src="static/js/custom.js"></script>
   <script type="text/javascript">
-    function sendComment() {
+    var form = document.getElementById('send-comment');
+    form.addEventListener('submit', sendComment)
+
+    function sendComment(event) {
+      event.preventDefault();
       let name = $('#name').val();
       let phone = $('#phone').val();
       let comment = $('#message').val();
       let email = $('#email').val();
       let website = $('#website').val();
 
-      fetch(`https://intranet.joshsoftware.com/api/v1/contact_clipp`, {
+      fetch('https://intranet.joshsoftware.com/api/v1/contact_clipp', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, phone, email, website, comment })
@@ -961,6 +965,7 @@
       })
       .then(() => {
         alert("Thanks for contacting us! We will get back to you soon!");
+        window.location.reload();
       })
       .catch(result => {
         console.log(result);
