@@ -816,35 +816,35 @@
           <div class="col-md-6 col-lg-8 m-15px-tb">
             <div class="contact-form m-50px-l md-m-0px-l">
               <h2>Drop us A Message</h2>
-              <form class="contactform" method="post">
+              <form class="contactform" method="post" onsubmit="sendComment()">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input name="name" type="text" placeholder="Name" class="validate form-control" required="">
+                      <input name="name" id="name" type="text" placeholder="Name" class="validate form-control" required="">
                       <span class="input-focus-effect"></span>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="email" placeholder="Email" name="email" class="validate form-control" required="">
+                      <input type="email" id="email" placeholder="Email" name="email" class="validate form-control" required="">
                       <span class="input-focus-effect"></span>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="url" placeholder="Website" name="text" class="validate form-control" required="">
+                      <input type="url" id="website" placeholder="Website" name="text" class="validate form-control" required="">
                       <span class="input-focus-effect"></span>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Phone" name="text" class="validate form-control" required="">
+                      <input type="text" id="phone" placeholder="Phone" name="text" class="validate form-control" required="">
                       <span class="input-focus-effect"></span>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea placeholder="Your Comment" name="message" class="form-control" required=""></textarea>
+                      <textarea placeholder="Your Comment" id="message" name="message" class="form-control" required=""></textarea>
                       <span class="input-focus-effect"></span>
                     </div>
                   </div>
@@ -941,6 +941,32 @@
 
   <!-- custom -->
   <script src="static/js/custom.js"></script>
+  <script type="text/javascript">
+    function sendComment() {
+      let name = $('#name').val();
+      let phone = $('#phone').val();
+      let comment = $('#message').val();
+      let email = $('#email').val();
+      let website = $('#website').val();
+
+      fetch(`https://intranet.joshsoftware.com/api/v1/contact_clipp`, {
+        method: 'post',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, email, website, comment })
+      })
+      .then(res => {
+        if ( res.ok ) return res.json();
+
+        throw new Error(`${ res.status } - ${ res.statusText }`);
+      })
+      .then(() => {
+        alert("Thanks for contacting us! We will get back to you soon!");
+      })
+      .catch(result => {
+        console.log(result);
+      });
+    }
+  </script>
 </body>
 <!-- Body End -->
 
