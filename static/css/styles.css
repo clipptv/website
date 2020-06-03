@@ -55,13 +55,13 @@ img {
 @media (max-width: 991px){
  .section {
     padding: 60px 0;
-  } 
+  }
 }
 
 @media (max-width: 767px){
  .section {
     padding: 40px 0;
-  } 
+  }
 }
 
 .section-effect {
@@ -289,7 +289,7 @@ img {
 .home-banner .home-right,
 .social-icons li a,
 .faq-row .no {
-  border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%; 
+  border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
 }
 
 /*-----------------------------------------
@@ -335,7 +335,7 @@ img {
   color: #fff;
 }
 .m-btn-theme2nd:hover {
-  color: #fff; 
+  color: #fff;
 }
 
 /*-----------------------------------------
@@ -352,14 +352,14 @@ img {
   vertical-align: top;
   background: transparent;
   margin: 0 2px;
-  border: 1px solid #22417a;
+  border: 1px solid #3c1c94;
   box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
 .owl-dots .owl-dot.active {
-  background: #22417a;
+  background: #3c1c94;
 }
-.owl-nav .owl-prev, 
+.owl-nav .owl-prev,
 .owl-nav .owl-next {
   width: 45px;
   height: 45px;
@@ -374,7 +374,7 @@ img {
   box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
   background: #111;
 }
-.owl-nav .owl-prev:hover, 
+.owl-nav .owl-prev:hover,
 .owl-nav .owl-next:hover {
   background: #000;
 }
@@ -499,7 +499,7 @@ img {
      -moz-transition: ease all 0.2s;
        -o-transition: ease all 0.2s;
           transition: ease all 0.2s;
-  
+
 }
 .header-nav .navbar-nav .nav-link:hover:after {
   width: 110%;
@@ -628,13 +628,13 @@ img {
 
 .fixed-header.header-nav .navbar-nav .nav-link,
 .fixed-header.header-nav .navbar-brand {
-  color: #22417a;
+  color: #3c1c94;
 }
 .fixed-header.header-nav .navbar-nav .nav-btn.nav-link {
- border-color: #22417a; 
+ border-color: #3c1c94;
 }
 .fixed-header.header-nav .navbar-nav .nav-link:after {
- background: #22417a; 
+ background: #3c1c94;
 }
 
 .fixed-header.header-nav .navbar-toggler span {
@@ -642,7 +642,7 @@ img {
 }
 
 .fixed-header.header-nav .navbar-nav > li .sub-menu-toggle {
-  color: #22417a
+  color: #3c1c94
 }
 
 @media (max-width: 991px){
@@ -678,7 +678,7 @@ img {
     text-align: right;
     z-index: 1;
   }
-  
+
   .header-nav .navbar-nav > li .sub-menu {
     margin: 0;
     padding: 0;
@@ -757,7 +757,7 @@ img {
 .bg-effect:after {
   left: 560px;
 }
-.bg-effect:before, 
+.bg-effect:before,
 .bg-effect:after {
   background: rgba(4, 4, 4, 0.04);
   position: absolute;
@@ -820,9 +820,9 @@ img {
   color: rgba(255,255,255,.6);
 }
 
-.home-banner .m-btn { 
-  min-width: 140px; 
-  margin-right: 10px; 
+.home-banner .m-btn {
+  min-width: 140px;
+  margin-right: 10px;
   text-align: center;
 }
 
@@ -868,7 +868,7 @@ img {
 
 @media (max-width: 767px){
   .home-banner .full-screen {
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
   }
   .home-banner h1 {
     font-size: 30px;
@@ -1069,7 +1069,7 @@ img {
   font-size: 24px;
   line-height: 50px;
   float: left;
-  text-align: center; 
+  text-align: center;
   color: #fff;
 }
 
@@ -1098,7 +1098,7 @@ img {
 }
 
 .feature-box-02 .fb4-list-type {
-  list-style: none; 
+  list-style: none;
 }
 .feature-box-02 .fb4-list-type li:not(:last-child) {
   margin-bottom: 10px;
@@ -1354,7 +1354,7 @@ img {
   top: 6px;
   width: 30px;
   height: 30px;
-  color: #fff;    
+  color: #fff;
   line-height: 30px;
   text-align: center;
 }
@@ -1365,7 +1365,7 @@ img {
 .aboutus-section {
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: bottom;  
+  background-position: bottom;
 }
 /*-----------------------------------------
 *  13. Video Box
@@ -1585,7 +1585,7 @@ img {
   width: 100%;
   text-align: center;
   left: 0;
-    
+
 }
 .price-table-01 .pt-head.standard {
   border: none;
@@ -1681,7 +1681,7 @@ img {
   margin: 0 0 10px;
 }
 
-.faq-row .faq-title { 
+.faq-row .faq-title {
   padding: 15px 20px 15px 55px;
   margin: 0;
   font-size: 15px;
@@ -1720,7 +1720,7 @@ img {
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid #e5e8ed;
-  min-height: 100%; 
+  min-height: 100%;
 }
 .blog-item .blog-content {
   text-align: center;
@@ -1864,7 +1864,7 @@ img {
 }
 .footer-section .fot-link a:hover:after {
   width: 100%;
-} 
+}
 
 .footer-section .footer-text {
   width: 360px;
