@@ -502,12 +502,10 @@ img {
 
 }
 .header-nav .navbar-nav .nav-link:hover:after {
-  width: 110%;
-  left: -5%;
+  color: blue
 }
 .header-nav .navbar-nav .nav-link.active:after {
-  width: 140%;
-  left: -20%;
+  color: blue
 }
 
 .header-nav .navbar-nav .nav-btn.nav-link {
@@ -635,6 +633,7 @@ img {
 }
 .fixed-header.header-nav .navbar-nav .nav-link:after {
  background: #3c1c94;
+ color: blue
 }
 
 .fixed-header.header-nav .navbar-toggler span {
