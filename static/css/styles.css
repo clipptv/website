@@ -634,7 +634,7 @@ img {
  border-color: #3c1c94;
 }
 .fixed-header.header-nav .navbar-nav .nav-link:after {
- background: transparent;
+ background: #3c1c94;
 }
 
 .fixed-header.header-nav .navbar-toggler span {
