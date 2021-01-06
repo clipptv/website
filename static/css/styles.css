@@ -634,9 +634,8 @@ img {
   filter: brightness(0) invert(1);
 }
 
-}
-.fixed-header.navbar-brand>img{
-  filter: brightness(1) invert(0);
+.fixed-header .navbar-brand>img{
+  filter: none !important;
 }
 
 .fixed-header.header-nav .navbar-nav .nav-btn.nav-link {
