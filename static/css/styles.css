@@ -628,6 +628,17 @@ img {
 .fixed-header.header-nav .navbar-brand {
   color: #3c1c94;
 }
+
+.navbar-brand>img{
+  width:35%;
+  filter: brightness(0) invert(1);
+}
+
+}
+.fixed-header.navbar-brand>img{
+  filter: brightness(1) invert(0);
+}
+
 .fixed-header.header-nav .navbar-nav .nav-btn.nav-link {
  border-color: #3c1c94;
 }

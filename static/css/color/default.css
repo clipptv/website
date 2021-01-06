@@ -46,8 +46,8 @@ a {
 .theme-hover:hover,
 .theme-g-bg{
    background:#3c1c94;
-    background-image: -webkit-linear-gradient(#2bc9b4, #3c1c94);
-    background-image: linear-gradient(#2bc9b4, #3c1c94);
+   background-image: -webkit-linear-gradient(45deg, #3c1c94 0%, #6e19c2 100%);
+   background-image: linear-gradient(45deg, #3c1c94 0%, #6e19c2 100%);
 }
 
 
